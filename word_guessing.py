@@ -16,7 +16,7 @@ words = ['rainbow', 'computer', 'science', 'programming',
 word = random.choice(words)
  
  
-print("Guess the characters")
+print("Guess the characters in the words")
  
 guesses = ''
  
@@ -49,15 +49,15 @@ while turns > 0:
     if failed == 0:
         # user will win the game if failure is 0
         # and 'You Win' will be given as output
-        print("You Win") 
+        print("You Win this round") 
          
         # this print the correct word
-        print("The word is: ", word) 
+        print("The correct word is: ", word) 
         break
      
     # if user has input the wrong alphabet then
     # it will ask user to enter another alphabet
-    guess = input("guess a character:")
+    guess = input("pls guess a character:")
      
     # every input character will be stored in guesses 
     guesses += guess 
@@ -69,12 +69,12 @@ while turns > 0:
          
         # if the character doesn’t match the word
         # then “Wrong” will be given as output 
-        print("Wrong")
+        print("Not Correct")
          
         # this will print the number of
         # turns left for the user
-        print("You have", + turns, 'more guesses')
+        print("You have", + turns, ' no. of guesses left')
          
          
         if turns == 0:
-            print("You Loose")
+            print("You Loose the game")
